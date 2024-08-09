@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4U - Sobre Nós</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-section {
+            margin: 50px 0;
+        }
+        .about-section h2 {
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            margin-bottom: 20px;
+        }
+        .about-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .about-section .card {
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+        .team-member {
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .testimonial p {
+            font-style: italic;
+        }
+        .testimonial h4 {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .timeline {
+            position: relative;
+            padding: 10px 0;
+            margin: 10px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #007bff;
+            left: 50%;
+            margin-left: -1px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .timeline-item .timeline-content {
+            position: relative;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin-left: 50%;
+            margin-right: 0;
+            text-align: left;
+        }
+        .timeline-item .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            width: 0;
+            height: 0;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent #fff transparent transparent;
+        }
+        .timeline-item.left .timeline-content {
+            margin-left: 0;
+            margin-right: 50%;
+        }
+        .timeline-item.left .timeline-content::after {
+            left: auto;
+            right: -15px;
+            border-color: transparent transparent transparent #fff;
+        }
+        footer {
+            background-color: #f8f9fa;
+        }
+        .footer-links {
+            margin-top: 20px;
+        }
+        .footer-links a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #007bff;
+            font-size: 1.5rem;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+    </style>
+    <script src="tema.js"></script>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">4U</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link" href="integracao.html">Integração</a></li>
+                <li class="nav-item"><a class="nav-link" href="equipe.html">Nosso Time</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho -->
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Sobre Nós</h1>
+        <p class="lead">Descubra a história da nossa empresa, nosso parceiro ESPRO, motivo da criação da 4U,
+            <br>linha do tempo e um feedback de nossos parceiros.</p>
+    </header>
+
+    <!-- Seção Sobre Nós -->
+    <section class="about-section">
+        <div class="container">
+            <!-- Sobre a Empresa -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sobre a Empresa</h2>
+                    <p>Falarmos sobre a 4U</p>
+                    <img src="https://via.placeholder.com/600x300" alt="Sobre a Empresa">
+                </div>
+                <div class="col-md-6">
+                    <h2>Sobre o ESPRO</h2>
+                    <p>Falarmos sobre o ESPRO</p>
+                    <img src="https://via.placeholder.com/600x300" alt="ESPRO">
+                </div>
+            </div>
+
+            <!-- Por Que Criamos a 4U? -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Por Que Criamos a 4U?</h2>
+                    <p>O pq criamos a 4U</p>
+                    <img src="https://via.placeholder.com/1200x600" alt="Motivo da Criação">
+                </div>
+            </div>
+
+            <!-- Linha do Tempo -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Nossa Jornada</h2>
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <h4>Linha do tempo</h4>
+                                <p>Linha do tempo Linha do tempo Linha do tempo Linha do tempo Linha do tempo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <h4>Linha do tempo</h4>
+                                <p>Linha do tempo Linha do tempo Linha do tempo Linha do tempo Linha do tempo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <h4>Linha do tempo</h4>
+                                <p>Linha do tempo Linha do tempo Linha do tempo Linha do tempo Linha do tempo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <h4>Linha do tempo</h4>
+                                <p>Linha do tempo Linha do tempo Linha do tempo Linha do tempo Linha do tempo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testemunhos -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>O que Dizeram Sobre Nós</h2>
+                    <div class="testimonial">
+                        <p>"teste teste teste teste teste teste teste teste teste teste"</p>
+                        <h4>testando testando</h4>
+                        <p>Testando</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"teste teste teste teste teste teste teste teste teste teste"</p>
+                        <h4>testando testando</h4>
+                        <p>Testando</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 4U</p>
+            <div class="footer-links">
+                <a href="termos.html">Termos de Serviço</a>
+                <a href="privacidade.html">Política de Privacidade</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://whatsapp.com" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</body>
+</html>

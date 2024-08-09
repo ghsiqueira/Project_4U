@@ -1,0 +1,125 @@
+:root {
+    --primary-dark: #771F25;
+    --primary-light: #AA6C65;
+    --background-light: #F7F2EE;
+    --background-dark: #480C0D;
+    --accent-light: #E4C9BB;
+    --text-dark: #000000;
+    --text-light: #FFFFFF;
+}
+
+/* Aplicar cores ao fundo e texto */
+body {
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+.navbar {
+    background-color: var(--primary-light);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-dark);
+}
+
+.navbar-light .navbar-brand {
+    color: var(--text-dark);
+}
+
+header {
+    background-color: var(--primary-light);
+    color: var(--text-dark);
+}
+
+footer {
+    background-color: var(--primary-light);
+    color: var(--text-dark);
+}
+
+footer a {
+    color: var(--text-dark);
+}
+
+.footer-links a {
+    color: var(--primary-light);
+}
+
+.footer-links a:hover {
+    color: var(--primary-dark);
+}
+
+/* Estilo para botões */
+.btn-primary {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+body.dark-mode .btn-primary {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+/* Estilo para formulários */
+.form-control {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    border-color: var(--primary-light);
+}
+
+.form-control:focus {
+    border-color: var(--primary-dark);
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.125);
+}
+
+body.dark-mode .form-control {
+    background-color: var(--background-dark);
+    color: var(--text-dark); 
+    border-color: var(--primary-dark);
+}
+
+body.dark-mode .form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.125);
+}
+
+/* Tema Escuro */
+body.dark-mode {
+    color: var(--text-light);
+    background-color: var(--background-dark);
+}
+
+body.dark-mode .navbar {
+    background-color: var(--primary-dark);
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: var(--text-dark); 
+}
+
+body.dark-mode .navbar-light .navbar-brand {
+    color: var(--text-dark);
+}
+
+body.dark-mode header {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+body.dark-mode footer {
+    background-color: var(--primary-dark) !important;
+    color: var(--text-light);
+}
+
+body.dark-mode footer a {
+    color: var(--primary-light);
+}
