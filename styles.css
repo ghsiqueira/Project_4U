@@ -96,6 +96,42 @@ footer .social-icons i:hover {
     font-size: 1rem; /* Ajuste o tamanho do ícone conforme necessário */
 }
 
+/* Estilos adicionais para o menu hamburger */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
+}
+
+.navbar-toggler {
+    border: none; /* Remove a borda padrão do botão */
+    background: transparent; /* Torna o fundo do botão transparente */
+}
+
+.navbar-toggler-icon {
+    background-size: 30px; /* Ajusta o tamanho do ícone */
+}
+
+/* Estilos para a seção de Testemunhos no modo claro */
+.testimonial {
+    background-color: var(--accent-light); /* Fundo suave de pêssego */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento inferior entre os testemunhos */
+}
+
+.testimonial p {
+    color: var(--text-dark); /* Cor do texto */
+}
+
+.testimonial h4 {
+    color: var(--primary-dark); /* Cor dos subtítulos */
+}
+
+/* Estilo do título da seção */
+.testemunhos {
+    color: var(--text-dark); /* Cor do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
 /* Estilos para o modo escuro */
 .dark-mode {
     background-color: var(--background-dark);
@@ -222,4 +258,30 @@ footer .social-icons i:hover {
 
 .dark-mode #theme-icon {
     font-size: 1rem; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+/* Ajuste para o modo escuro */
+.dark-mode .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
+}
+
+/* Estilos para a seção de Testemunhos no modo escuro */
+.dark-mode .testimonial {
+    background-color: var(--primary-dark); /* Fundo escuro */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento inferior entre os testemunhos */
+}
+
+.dark-mode .testimonial p {
+    color: var(--text-light); /* Cor do texto */
+}
+
+.dark-mode .testimonial h4 {
+    color: var(--accent-light); /* Cor dos subtítulos */
+}
+
+/* Ajustes para o modo escuro do título da seção */
+.dark-mode .testemunhos {
+    color: var(--text-light); /* Cor do título */
 }
