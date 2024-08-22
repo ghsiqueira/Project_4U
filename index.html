@@ -100,19 +100,45 @@
             width: 100%; /* Ajusta a largura da imagem do carrossel */
             height: 100%; /* Reduz a altura das imagens do carrossel */
         }
+
+        /* Estilos adicionais para o menu hamburger */
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
+        }
+
+        .navbar-toggler {
+            border: none; /* Remove a borda padrão do botão */
+            background: transparent; /* Torna o fundo do botão transparente */
+        }
+
+        .navbar-toggler-icon {
+            background-size: 30px; /* Ajusta o tamanho do ícone */
+        }
+
+        /* Ajuste para o modo escuro */
+        .dark-mode .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
+        }
     </style>
     <script src="tema.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">4U</a>
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
                 <li class="nav-item"><a class="nav-link" href="integracao.html">Integração (onboarding)</a></li>
                 <li class="nav-item"><a class="nav-link" href="equipe.html">Nosso Time</a></li>
             </ul>
+            <!-- Botão para alternar o tema -->
+            <button id="theme-toggle" class="btn">
+                <i id="theme-icon" class="fas fa-sun"></i>
+            </button>
         </div>
     </nav>
 

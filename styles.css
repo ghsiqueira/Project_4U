@@ -1,125 +1,225 @@
+/* Definições de cores para o tema claro e escuro */
 :root {
-    --primary-dark: #771F25;
-    --primary-light: #AA6C65;
+    --primary-light: #D4A5A5; /* Tom mais suave do vermelho claro */
+    --primary-dark: #5A1F25;  /* Tom mais profundo do vermelho escuro */
+    --accent-light: #E8BBAE;  /* Tom suave de pêssego */
+    --accent-dark: #480C0D;   /* Tom escuro já definido */
     --background-light: #F7F2EE;
-    --background-dark: #480C0D;
-    --accent-light: #E4C9BB;
+    --background-dark: #202020; /* Um tom escuro para o fundo */
+    --text-light: #F7F2EE;
     --text-dark: #000000;
-    --text-light: #FFFFFF;
+    --jumbotron-dark: #563a3d;
 }
 
-/* Aplicar cores ao fundo e texto */
 body {
-    color: var(--text-dark);
     background-color: var(--background-light);
+    color: var(--text-dark);
 }
 
-.navbar {
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     background-color: var(--primary-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.circle h3 {
     color: var(--text-dark);
-}
-
-.navbar-light .navbar-brand {
-    color: var(--text-dark);
-}
-
-header {
-    background-color: var(--primary-light);
-    color: var(--text-dark);
+    font-size: 24px;
+    text-align: center;
 }
 
 footer {
-    background-color: var(--primary-light);
+    background-color: var(--accent-dark);
     color: var(--text-dark);
 }
 
 footer a {
     color: var(--text-dark);
+    text-decoration: none;
 }
 
-.footer-links a {
-    color: var(--primary-light);
-}
-
-.footer-links a:hover {
+footer a:hover {
     color: var(--primary-dark);
 }
 
-/* Estilo para botões */
+footer .social-icons i {
+    color: var(--primary-light);
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+footer .social-icons i:hover {
+    color: var(--accent-dark);
+}
+
 .btn-primary {
     background-color: var(--primary-light);
-    border-color: var(--primary-light);
+    color: var(--text-dark);
+    border: none;
 }
 
 .btn-primary:hover {
     background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
-}
-
-body.dark-mode .btn-primary {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
-}
-
-body.dark-mode .btn-primary:hover {
-    background-color: var(--primary-light);
-    border-color: var(--primary-light);
-}
-
-/* Estilo para formulários */
-.form-control {
-    background-color: var(--background-light);
-    color: var(--text-dark);
-    border-color: var(--primary-light);
-}
-
-.form-control:focus {
-    border-color: var(--primary-dark);
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.125);
-}
-
-body.dark-mode .form-control {
-    background-color: var(--background-dark);
-    color: var(--text-dark); 
-    border-color: var(--primary-dark);
-}
-
-body.dark-mode .form-control:focus {
-    border-color: var(--primary-light);
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.125);
-}
-
-/* Tema Escuro */
-body.dark-mode {
     color: var(--text-light);
-    background-color: var(--background-dark);
 }
 
-body.dark-mode .navbar {
-    background-color: var(--primary-dark);
+.btn-secondary {
+    background-color: var(--accent-dark);
+    color: var(--text-light);
+    border: none;
 }
 
-body.dark-mode .navbar-light .navbar-nav .nav-link {
-    color: var(--text-dark); 
-}
-
-body.dark-mode .navbar-light .navbar-brand {
+.btn-secondary:hover {
+    background-color: var(--accent-light);
     color: var(--text-dark);
 }
 
-body.dark-mode header {
-    background-color: var(--primary-dark);
+#theme-toggle {
+    background-color: var(--background-light); /* Cor de fundo desejada */
+    border: none; /* Remove a borda padrão do botão */
+    color: var(--text-dark); /* Cor do texto ou ícone */
+    padding: 1px 10px; /* Ajuste o espaçamento interno conforme necessário */
+    border-radius: 99%; /* Adiciona bordas arredondadas, se desejar */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+}
+
+#theme-toggle:hover {
+    background-color: var(--accent-light); /* Cor de fundo ao passar o mouse */
+}
+
+#theme-icon {
+    font-size: 1rem; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+    background-color: var(--background-dark);
     color: var(--text-light);
 }
 
-body.dark-mode footer {
-    background-color: var(--primary-dark) !important;
+.dark-mode footer {
+    background-color: var(--background-dark);
     color: var(--text-light);
 }
 
-body.dark-mode footer a {
+.dark-mode footer a {
+    color: var(--accent-light);
+    text-decoration: none;
+}
+
+.dark-mode footer a:hover {
     color: var(--primary-light);
+}
+
+.dark-mode footer .social-icons i {
+    color: var(--accent-light);
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.dark-mode footer .social-icons i:hover {
+    color: var(--primary-dark);
+}
+
+.dark-mode .btn-primary {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: var(--primary-light);
+    color: var(--text-dark);
+}
+
+.dark-mode .btn-secondary {
+    background-color: var(--accent-dark);
+    color: var(--text-light);
+}
+
+.dark-mode .btn-secondary:hover {
+    background-color: var(--accent-light);
+    color: var(--text-dark);
+}
+
+.dark-mode .circle {
+    background-color: var(--primary-dark);
+}
+
+.dark-mode .circle h3 {
+    color: var(--text-light);
+}
+
+.dark-mode a {
+    color: var(--primary-light);
+}
+
+.dark-mode a:hover {
+    color: var(--accent-light);
+}
+
+.dark-mode .card-body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+}
+
+.dark-mode .card {
+    border: 1px solid var(--primary-dark);
+}
+
+.dark-mode .jumbotron {
+    color: var(--text-light);
+    background-color: var(--jumbotron-dark);
+}
+
+/* Estilo da barra de navegação no modo escuro */
+.dark-mode .navbar-light {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+}
+
+.dark-mode .navbar-light .navbar-brand {
+    color: var(--primary-light);
+}
+
+.dark-mode .navbar-light .navbar-brand:hover {
+    color: var(--text-light);
+}
+
+.dark-mode .navbar-light .nav-link {
+    color: var(--text-light);
+}
+
+.dark-mode .navbar-light .nav-link:hover {
+    color: var(--primary-light);
+}
+
+.dark-mode .navbar-light .navbar-toggler-icon {
+    background-color: var(--text-light);
+}
+
+/* Estilo adicional para links ativos */
+.dark-mode .navbar-light .nav-link.active {
+    color: var(--primary-light);
+}
+
+.dark-mode #theme-toggle {
+    background-color: var(--background-dark); /* Cor de fundo desejada */
+    border: none; /* Remove a borda padrão do botão */
+    color: var(--text-light); /* Cor do texto ou ícone */
+    padding: 1px 10px; /* Ajuste o espaçamento interno conforme necessário */
+    border-radius: 99%; /* Adiciona bordas arredondadas, se desejar */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+}
+
+.dark-mode #theme-toggle:hover {
+    background-color: var(--primary-light); /* Cor de fundo ao passar o mouse */
+}
+
+.dark-mode #theme-icon {
+    font-size: 1rem; /* Ajuste o tamanho do ícone conforme necessário */
 }

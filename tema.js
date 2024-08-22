@@ -1,21 +1,34 @@
-// JavaScript para alternar entre tema claro e escuro
-document.addEventListener('DOMContentLoaded', (event) => {
-    const toggleSwitch = document.getElementById('theme-toggle');
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona o botão de alternar tema e o ícone
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
 
-    // Verifica o tema atual ao carregar a página
-    if (localStorage.getItem('dark-mode') === 'enabled') {
+    // Verifica o estado do tema preferido do usuário
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    // Adiciona a classe `dark-mode` ao body se o tema preferido do usuário for escuro
+    if (prefersDarkScheme) {
         document.body.classList.add('dark-mode');
-        toggleSwitch.checked = true;
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+    } else {
+        document.body.classList.remove('dark-mode');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
     }
 
-    // Alterna o tema ao clicar no interruptor
-    toggleSwitch.addEventListener('change', () => {
-        if (toggleSwitch.checked) {
-            document.body.classList.add('dark-mode');
-            localStorage.setItem('dark-mode', 'enabled');
+    // Adiciona um listener para o botão de alternar tema
+    themeToggleBtn.addEventListener('click', function() {
+        // Alterna a classe `dark-mode` no body
+        document.body.classList.toggle('dark-mode');
+        
+        // Atualiza o ícone com base no estado atual do tema
+        if (document.body.classList.contains('dark-mode')) {
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
         } else {
-            document.body.classList.remove('dark-mode');
-            localStorage.setItem('dark-mode', 'disabled');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
         }
     });
 });
