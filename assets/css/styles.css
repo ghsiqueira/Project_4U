@@ -1,3 +1,5 @@
+/* MUDAR AS CORES */
+
 :root {
     --primary-light: #D4A5A5;
     --primary-dark: #5A1F25; 
@@ -8,6 +10,13 @@
     --text-light: #F7F2EE;
     --text-dark: #000000;
     --jumbotron-dark: #563a3d;
+
+    --cor1: #771F25;
+    --cor2: #AA6C65;
+    --cor3: #F7F2EE;
+    --cor4: #480C0D;
+    --cor5: #E4C9BB;
+    --cor6: #000;
 }
 
 body {
@@ -196,7 +205,7 @@ footer .social-icons i:hover {
 }
 
 .dark-mode .navbar-light .navbar-brand {
-    color: var(--primary-light);
+    color: #fff;
 }
 
 .dark-mode .navbar-light .navbar-brand:hover {
