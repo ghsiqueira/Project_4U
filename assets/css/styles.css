@@ -1,11 +1,10 @@
-/* Definições de cores para o tema claro e escuro */
 :root {
-    --primary-light: #D4A5A5; /* Tom mais suave do vermelho claro */
-    --primary-dark: #5A1F25;  /* Tom mais profundo do vermelho escuro */
-    --accent-light: #E8BBAE;  /* Tom suave de pêssego */
-    --accent-dark: #480C0D;   /* Tom escuro já definido */
+    --primary-light: #D4A5A5;
+    --primary-dark: #5A1F25; 
+    --accent-light: #E8BBAE;
+    --accent-dark: #480C0D; 
     --background-light: #F7F2EE;
-    --background-dark: #202020; /* Um tom escuro para o fundo */
+    --background-dark: #202020;
     --text-light: #F7F2EE;
     --text-dark: #000000;
     --jumbotron-dark: #563a3d;
@@ -16,25 +15,8 @@ body {
     color: var(--text-dark);
 }
 
-.circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--primary-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 15px;
-}
-
-.circle h3 {
-    color: var(--text-dark);
-    font-size: 24px;
-    text-align: center;
-}
-
 footer {
-    background-color: var(--accent-dark);
+    background-color: var(--background-light);
     color: var(--text-dark);
 }
 
@@ -80,59 +62,55 @@ footer .social-icons i:hover {
 }
 
 #theme-toggle {
-    background-color: var(--background-light); /* Cor de fundo desejada */
-    border: none; /* Remove a borda padrão do botão */
-    color: var(--text-dark); /* Cor do texto ou ícone */
-    padding: 1px 10px; /* Ajuste o espaçamento interno conforme necessário */
-    border-radius: 99%; /* Adiciona bordas arredondadas, se desejar */
-    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+    background-color: var(--background-light);
+    border: none; 
+    color: var(--text-dark); 
+    padding: 1px 10px; 
+    border-radius: 99%; 
+    cursor: pointer; 
 }
 
 #theme-toggle:hover {
-    background-color: var(--accent-light); /* Cor de fundo ao passar o mouse */
+    background-color: var(--accent-light);
 }
 
 #theme-icon {
-    font-size: 1rem; /* Ajuste o tamanho do ícone conforme necessário */
+    font-size: 1rem; 
 }
 
-/* Estilos adicionais para o menu hamburger */
 .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
 }
 
 .navbar-toggler {
-    border: none; /* Remove a borda padrão do botão */
-    background: transparent; /* Torna o fundo do botão transparente */
+    border: none; 
+    background: transparent; 
 }
 
 .navbar-toggler-icon {
-    background-size: 30px; /* Ajusta o tamanho do ícone */
+    background-size: 30px;
 }
 
-/* Estilos para a seção de Testemunhos no modo claro */
 .testimonial {
-    background-color: var(--accent-light); /* Fundo suave de pêssego */
-    border-radius: 8px; /* Bordas arredondadas */
-    padding: 15px; /* Espaçamento interno */
-    margin-bottom: 15px; /* Espaçamento inferior entre os testemunhos */
+    background-color: var(--accent-light); 
+    border-radius: 8px; 
+    padding: 15px; 
+    margin-bottom: 15px; 
 }
 
 .testimonial p {
-    color: var(--text-dark); /* Cor do texto */
+    color: var(--text-dark);
 }
 
 .testimonial h4 {
-    color: var(--primary-dark); /* Cor dos subtítulos */
+    color: var(--primary-dark); 
 }
 
-/* Estilo do título da seção */
 .testemunhos {
-    color: var(--text-dark); /* Cor do título */
-    margin-bottom: 20px; /* Espaçamento inferior */
+    color: var(--text-dark); 
+    margin-bottom: 20px;
 }
 
-/* Estilos para o modo escuro */
 .dark-mode {
     background-color: var(--background-dark);
     color: var(--text-light);
@@ -212,7 +190,6 @@ footer .social-icons i:hover {
     background-color: var(--jumbotron-dark);
 }
 
-/* Estilo da barra de navegação no modo escuro */
 .dark-mode .navbar-light {
     background-color: var(--background-dark);
     color: var(--text-light);
@@ -234,54 +211,52 @@ footer .social-icons i:hover {
     color: var(--primary-light);
 }
 
-.dark-mode .navbar-light .navbar-toggler-icon {
-    background-color: var(--text-light);
-}
-
-/* Estilo adicional para links ativos */
 .dark-mode .navbar-light .nav-link.active {
     color: var(--primary-light);
 }
 
 .dark-mode #theme-toggle {
-    background-color: var(--background-dark); /* Cor de fundo desejada */
-    border: none; /* Remove a borda padrão do botão */
-    color: var(--text-light); /* Cor do texto ou ícone */
-    padding: 1px 10px; /* Ajuste o espaçamento interno conforme necessário */
-    border-radius: 99%; /* Adiciona bordas arredondadas, se desejar */
-    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+    background-color: var(--background-dark); 
+    border: none; 
+    color: var(--text-light);
+    padding: 1px 10px; 
+    border-radius: 99%;
+    cursor: pointer;
 }
 
 .dark-mode #theme-toggle:hover {
-    background-color: var(--primary-light); /* Cor de fundo ao passar o mouse */
+    background-color: var(--primary-light);
 }
 
 .dark-mode #theme-icon {
-    font-size: 1rem; /* Ajuste o tamanho do ícone conforme necessário */
+    font-size: 1rem; 
 }
 
-/* Ajuste para o modo escuro */
 .dark-mode .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
 }
 
-/* Estilos para a seção de Testemunhos no modo escuro */
 .dark-mode .testimonial {
-    background-color: var(--primary-dark); /* Fundo escuro */
-    border-radius: 8px; /* Bordas arredondadas */
-    padding: 15px; /* Espaçamento interno */
-    margin-bottom: 15px; /* Espaçamento inferior entre os testemunhos */
+    background-color: var(--primary-dark); 
+    border-radius: 8px; 
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 .dark-mode .testimonial p {
-    color: var(--text-light); /* Cor do texto */
+    color: var(--text-light);
 }
 
 .dark-mode .testimonial h4 {
-    color: var(--accent-light); /* Cor dos subtítulos */
+    color: var(--accent-light)
 }
 
-/* Ajustes para o modo escuro do título da seção */
 .dark-mode .testemunhos {
-    color: var(--text-light); /* Cor do título */
+    color: var(--text-light);
+}
+
+.dark-mode .navbar-toggler-close {
+    font-size: 1.5rem; /* Ajusta o tamanho do ícone de X */
+    color: #fff; /* Cor do ícone de X */
+    transition: opacity 0.2s ease;
 }

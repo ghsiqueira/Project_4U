@@ -1,0 +1,123 @@
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circle h3 {
+    color: var(--text-dark);
+    font-size: 24px;
+    text-align: center;
+}
+
+.mission-vision-values {
+    text-align: center;
+    margin: 50px 0;
+}
+.mission-vision-values .col-md-4 {
+    margin-bottom: 30px;
+}
+.featured-editions {
+    margin: 50px 0;
+}
+.featured-editions img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.card-body {
+    padding: 10px; /* Reduzi o padding */
+}
+.card-title {
+    font-size: 1rem; /* Diminuí o tamanho da fonte */
+    margin-bottom: 10px;
+}
+.card-text {
+    font-size: 0.8rem; /* Diminuí o tamanho da fonte */
+    margin-bottom: 15px;
+}
+.about,
+.contact {
+    margin: 50px 0;
+    padding: 20px;
+}
+.circle h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+footer {
+    background-color: #f8f9fa;
+}
+.footer-links {
+    margin-top: 20px;
+}
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    margin: 0 10px;
+    color: #007bff;
+    font-size: 1.5rem;
+}
+.social-icons a:hover {
+    color: #0056b3;
+}
+.about-contact {
+    margin: 50px 0;
+}
+.about-contact .col-md-6 {
+    padding: 20px;
+}
+.about-contact .col-md-6:first-child {
+    border-right: 2px solid #dee2e6; /* Linha vertical separadora */
+}
+.contact textarea {
+    width: 100%; /* Limita a largura ao tamanho do container */
+    height: 160px; /* Define a altura fixa */
+    resize: none; /* Remove a opção de redimensionar */
+}
+
+/* Ajustes do Carrossel */
+.carousel-inner img {
+    width: 100%; /* Ajusta a largura da imagem do carrossel */
+    height: 100%; /* Reduz a altura das imagens do carrossel */
+}
+
+/* Estilos adicionais para o menu hamburger */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
+    transition: opacity 0.2s ease;
+    background-size: 30px; /* Ajusta o tamanho do ícone */
+}
+
+.navbar-toggler {
+    border: none; /* Remove a borda padrão do botão */
+    background: transparent; /* Torna o fundo do botão transparente */
+}
+
+.navbar-toggler-close {
+    font-size: 1.5rem; /* Ajusta o tamanho do ícone de X */
+    color: #000; /* Cor do ícone de X */
+    transition: opacity 0.2s ease;
+}
+
+/* Tema escuro */
+body.dark-mode .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
+}
