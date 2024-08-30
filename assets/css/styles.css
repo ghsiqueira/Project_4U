@@ -49,8 +49,8 @@ footer .social-icons i:hover {
 }
 
 .btn-primary {
-    background-color: var(--primary-light);
-    color: var(--text-dark);
+    background-color: var(--jumbotron-dark);
+    color: var(--text-light);
     border: none;
 }
 
@@ -60,14 +60,14 @@ footer .social-icons i:hover {
 }
 
 .btn-secondary {
-    background-color: var(--accent-dark);
+    background-color: var(--cor2);
     color: var(--text-light);
     border: none;
 }
 
 .btn-secondary:hover {
-    background-color: var(--accent-light);
-    color: var(--text-dark);
+    background-color: var(--primary-dark);
+    color: var(--text-light);
 }
 
 #theme-toggle {
