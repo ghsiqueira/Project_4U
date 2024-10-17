@@ -25,7 +25,7 @@ body {
 }
 
 footer {
-    background-color: var(--background-light);
+    background-color: var(--background-light) !important;
     color: var(--text-dark);
 }
 
@@ -111,10 +111,6 @@ footer .social-icons i:hover {
     color: var(--text-dark);
 }
 
-.testimonial h4 {
-    color: var(--primary-dark); 
-}
-
 .testemunhos {
     color: var(--text-dark); 
     margin-bottom: 20px;
@@ -126,7 +122,7 @@ footer .social-icons i:hover {
 }
 
 .dark-mode footer {
-    background-color: var(--background-dark);
+    background-color: var(--background-dark) !important;
     color: var(--text-light);
 }
 
@@ -268,4 +264,36 @@ footer .social-icons i:hover {
     font-size: 1.5rem; /* Ajusta o tamanho do ícone de X */
     color: #fff; /* Cor do ícone de X */
     transition: opacity 0.2s ease;
+}
+
+.dark-mode hr {
+    color: #fff;
+    background-color: #fff;
+}
+
+.dark-mode .espro-info {
+    color: var(--accent-light) !important;
+    background-color: var(--primary-dark);
+}
+
+.dark-mode .espro-info h3 {
+    color: var(--accent-light);
+}
+
+.dark-mode .espro-info li {
+    color: #fff;
+}
+
+.dark-mode .espro-info p {
+    color: #fff;
+}
+
+.dark-mode .espro-block ul li:before {
+    color: #fff;
+}
+
+.espro-info {
+    background-color: var(--accent-light);
+    padding: 20px;
+    border-radius: 10px;
 }

@@ -37,19 +37,6 @@
         .team-member {
             margin-bottom: 20px;
         }
-        .testimonial {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 30px;
-        }
-        .testimonial p {
-            font-style: italic;
-        }
-        .testimonial h4 {
-            margin-top: 10px;
-            font-weight: bold;
-        }
         .timeline {
             position: relative;
             padding: 10px 0;
@@ -106,21 +93,50 @@
         .footer-links {
             margin-top: 20px;
         }
-        .footer-links a {
-            margin: 0 10px;
-            color: #007bff;
-            text-decoration: none;
-        }
+        
         .footer-links a:hover {
             text-decoration: underline;
         }
-        .social-icons a {
-            margin: 0 10px;
-            color: #007bff;
-            font-size: 1.5rem;
+    
+        .espro-block {
+            margin-bottom: 20px;
         }
-        .social-icons a:hover {
-            color: #0056b3;
+    
+        .espro-block h3 {
+            color: #000;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+    
+        .espro-block p, .espro-block ul {
+            font-size: 1.1rem;
+            color: #333;
+        }
+    
+        .espro-block ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .espro-block ul li {
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+        }
+    
+        .espro-block ul li:before {
+            content: "•";
+            color: #000;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+    
+        .espro-logo {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
         }
     </style>
     <script src="tema.js"></script>
@@ -150,8 +166,7 @@
     <!-- Cabeçalho -->
     <header class="jumbotron text-center">
         <h1 class="display-4">Sobre Nós</h1>
-        <p class="lead">Descubra a história da nossa empresa, nosso parceiro ESPRO, motivo da criação da 4U,
-            <br>linha do tempo e um feedback de nossos parceiros.</p>
+        <p class="lead">Descubra a história da nossa empresa, nosso parceiro ESPRO e o motivo da criação da 4U!
     </header>
 
     <!-- Seção Sobre Nós -->
@@ -159,33 +174,46 @@
         <div class="container">
             <!-- Sobre a Empresa -->
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-12">
                     <h2>Sobre a Empresa</h2>
-                    <p>A 4U é uma revista dedicada a ser um canal de notícias prático e dinâmico, cobrindo uma ampla gama de temas para os
-                        jovens do ESPRO começarem o dia bem informados.
-                    </p>
-                    <img src="https://via.placeholder.com/600x300" alt="Sobre a Empresa">
-                </div>
-                <div class="col-md-6">
-                    <h2>Sobre o ESPRO</h2>
-                    <p>Falarmos sobre o ESPRO</p>
-                    <img src="https://via.placeholder.com/600x300" alt="ESPRO">
+                    <hr>
+                    <p>A 4U nasceu com o propósito de conectar jovens a uma fonte confiável e prática de notícias. Nossa missão é garantir que informações essenciais cheguem de maneira rápida e precisa, ajudando os leitores a navegarem pelos desafios do mundo moderno com clareza. Atuamos como um canal de comunicação que vai além das manchetes, proporcionando uma visão crítica e completa dos eventos que moldam a sociedade. O nosso público, formado por jovens do ESPRO e de outros contextos, encontra na 4U uma plataforma que compreende suas necessidades e oferece conteúdo relevante, interativo e acessível.</p>
                 </div>
             </div>
 
-            <!-- Por Que Criamos a 4U? -->
+            <!-- Sobre o ESPRO -->
             <div class="row">
-                <div class="col-md-12">
-                    <h2>Por Que Criamos a 4U?</h2>
-                    <p>O pq criamos a 4U</p>
-                    <img src="https://via.placeholder.com/1200x600" alt="Motivo da Criação">
+                <div class="col-12">
+                    <hr>
+                    <h2>Sobre o ESPRO</h2>
+                    <img src="assets/images/espro.svg" alt="ESPRO" class="espro-logo">
+                    <div class="espro-info mt-3">
+                        <div class="espro-block">
+                            <h3>Missão</h3>
+                            <p>Promover a inclusão social por meio de ações socioeducativas, mediação de acesso e integração ao mundo do trabalho.</p>
+                        </div>
+                        <div class="espro-block">
+                            <h3>Visão</h3>
+                            <p>Ser uma instituição do terceiro setor reconhecida pela liderança, excelência, inovação e impacto social por meio de ações de proteção e inclusão social.</p>
+                        </div>
+                        <div class="espro-block">
+                            <h3>Valores</h3>
+                            <ul>
+                                <li>Ética</li>
+                                <li>Excelência</li>
+                                <li>Transparência</li>
+                                <li>Responsabilidade Social</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            
             <!-- Testemunhos -->
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="testemunhos">O Que Falam Sobre Nós</h2>
+                    <hr>
+                    <h2 class="testemunhos">Por que criamos a 4U?</h2>
                     <div class="testimonial">
                         <p>"teste teste teste teste teste teste teste teste teste teste"</p>
                         <h4>testando testando</h4>
@@ -199,9 +227,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>   
 
     <!-- Rodapé -->
+    <hr>
     <footer class="text-center py-4">
         <div class="container">
             <p>&copy; 2024 4U <br> Todos os direitos reservados</p>
