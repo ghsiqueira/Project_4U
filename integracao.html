@@ -1,79 +1,131 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4U - Integração</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/tema.js"></script>
-</head>
-<body>
-    <!-- Navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">4U</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menu-toggle">
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-close d-none">&#10005;</span>
-        </button>        
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
-                <li class="nav-item"><a class="nav-link" href="integracao.html">Integração</a></li>
-                <li class="nav-item"><a class="nav-link" href="equipe.html">Nosso Time</a></li>
-            </ul>
-            <!-- Botão para alternar o tema -->
-            <button id="theme-toggle" class="btn">
-                <i id="theme-icon" class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Cabeçalho -->
-    <header class="jumbotron text-center">
-        <h1 class="display-4">Integração</h1>
-        <p class="lead">ONBOARDING NESSA PAGINA</p>
-    </header>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4U - Integração</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="assets/css/home.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="assets/js/tema.js"></script>
+        <style>
+            /* Estilos adicionais para responsividade e centralização */
+            .iframe-container {
+                position: relative;
+                width: 70%; /* Centralizado com 80% da largura da tela */
+                height: 0;
+                padding-bottom: 40%; /* Proporção ajustada para 40% da altura */
+                margin: 1.6em auto; /* Margem superior e inferior, com centralização */
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
+            }
     
-    <!-- Rodapé -->
-    <footer class="text-center py-4">
-        <div class="container">
-            <p>&copy; 2024 4U <br> Todos os direitos reservados</p>
-           <!-- <div class="footer-links">
-                <a href="privacidade.html">Política de Privacidade</a> |
-                <a href="termos.html">Termos de Uso</a>
-            </div> -->
-            <div class="social-icons">
-                <a href="https://www.instagram.com/4newsforyou"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.getElementById('menu-toggle');
-            const navbarNav = document.getElementById('navbarNav');
-            const togglerIcon = menuToggle.querySelector('.navbar-toggler-icon');
-            const closeIcon = menuToggle.querySelector('.navbar-toggler-close');
+            .iframe-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
     
-            menuToggle.addEventListener('click', function () {
-                // Verifica se o menu está expandido
-                if (navbarNav.classList.contains('show')) {
-                    togglerIcon.classList.remove('d-none');
-                    closeIcon.classList.add('d-none');
-                } else {
-                    togglerIcon.classList.add('d-none');
-                    closeIcon.classList.remove('d-none');
+            /* Ajustes para dispositivos menores */
+            @media (max-width: 768px) {
+                header.jumbotron {
+                    padding: 2rem 1rem;
                 }
+    
+                header.jumbotron h1 {
+                    font-size: 2.5rem;
+                }
+    
+                .navbar-nav {
+                    text-align: center;
+                }
+    
+                /* Ajuste para o iframe em telas menores */
+                .iframe-container {
+                    width: 95%; /* Aumenta a largura em dispositivos menores */
+                    padding-bottom: 45%; /* Ligeiro aumento da altura em telas pequenas */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">4U</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menu-toggle">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-close d-none">&#10005;</span>
+            </button>        
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="integracao.html">Integração</a></li>
+                    <li class="nav-item"><a class="nav-link" href="equipe.html">Nosso Time</a></li>
+                </ul>
+                <!-- Botão para alternar o tema -->
+                <button id="theme-toggle" class="btn">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Cabeçalho -->
+        <header class="jumbotron text-center">
+            <h1 class="display-4">Integração</h1>
+            <p class="lead">Confira o slide abaixo para entender o processo de integração.</p>
+        </header>        
+        
+        <!-- Apresentação do Canva -->
+        <div class="iframe-container">
+            <iframe loading="lazy" 
+                    src="https://www.canva.com/design/DAGT7JwgHs4/37Rilr5bOjult85Rzc2Tnw/view?embed" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <hr>
+
+        <!-- Rodapé -->
+        <footer class="text-center py-4">
+            <div class="container">
+                <p>&copy; 2024 4U <br> Todos os direitos reservados</p>
+            <!-- <div class="footer-links">
+                    <a href="privacidade.html">Política de Privacidade</a> |
+                    <a href="termos.html">Termos de Uso</a>
+                </div> -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/4newsforyou"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.getElementById('menu-toggle');
+                const navbarNav = document.getElementById('navbarNav');
+                const togglerIcon = menuToggle.querySelector('.navbar-toggler-icon');
+                const closeIcon = menuToggle.querySelector('.navbar-toggler-close');
+        
+                menuToggle.addEventListener('click', function () {
+                    // Verifica se o menu está expandido
+                    if (navbarNav.classList.contains('show')) {
+                        togglerIcon.classList.remove('d-none');
+                        closeIcon.classList.add('d-none');
+                    } else {
+                        togglerIcon.classList.add('d-none');
+                        closeIcon.classList.remove('d-none');
+                    }
+                });
             });
-        });
-    </script>
-</body>
-</html>
+        </script>
+    </body>
+    </html>
